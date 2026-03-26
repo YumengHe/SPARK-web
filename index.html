@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
+  <!-- Google Fonts - Noto Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -33,6 +38,12 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">SPARK: Sim-ready Part-level Articulated Reconstruction with VLM Knowledge</h1>
+
+            <!-- Publication -->
+            <div class="is-size-5 publication-info">
+              <b>Computer Vision and Pattern Recognition (CVPR) 2026</b>
+            </div>
+            <br>
 
             <!-- Authors -->
             <div class="is-size-5 publication-authors">
@@ -67,11 +78,7 @@
 
             <!-- Author Notes -->
             <div class="is-size-6 publication-authors">
-              <span class="author-block"><i>* equal contributions</i></span>
-            </div>
-
-            <div class="is-size-5 publication-info">
-              <b>Computer Vision and Pattern Recognition (CVPR) 2026</b>
+              <span class="author-block"><i>* Equal Contributions</i></span>
             </div>
 
             <!-- Links -->
@@ -102,13 +109,13 @@
                   <a href="https://github.com/YumengHe/SPARK"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fab fa-github"></i></span>
-                    <span>Code (Coming Soon)</span>
+                    <span>Code</span>
                   </a>
                 </span> &nbsp;
 
                 <!-- Video Link -->
                 <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=ZaZHbkkPtXY"
+                <a href=""
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i> 
@@ -118,22 +125,22 @@
                 </span> &nbsp; -->
 
                 <!-- Model Link -->
-                <!-- <span class="link-block">
-                  <a href="https://huggingface.co/wgsxm/PartCrafter"
+                <span class="link-block">
+                  <a href=""
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fas fa-database"></i></span>
-                    <span>Model</span>
+                    <span>Model (Coming Soon)</span>
                   </a>
-                </span> &nbsp; -->
+                </span> &nbsp;
 
                 <!-- Demo Link -->
-                <!-- <span class="link-block">
-                  <a href="https://huggingface.co/spaces/alexnasa/PartCrafter"
+                <span class="link-block">
+                  <a href=""
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fas fa-magic"></i></span>
-                    <span>Demo</span>
+                    <span>Demo (Coming Soon)</span>
                   </a>
-                </span> -->
+                </span>
 
               </div>
             </div>
@@ -180,7 +187,7 @@
           <div class="item item-diamond">
             <img src="./static/inthewild/7/SPARK_blender.gif" class="comparison-image" />
           </div>
-		  <div class="item item-diamond">
+          <div class="item item-diamond">
             <img src="./static/demo/SPARK_blender2.gif" class="comparison-image" />
           </div>
         </div>
@@ -211,7 +218,7 @@
         <div class="column is-four-fifths">
           <div class="publication-video">
             <video controls autoplay muted loop playsinline style="width: 100%;">
-              <source src="./static/images/SPARK_video.mov" type="video/mp4">
+              <source src="./static/images/SPARK_video.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -231,281 +238,289 @@
     </p>
   </section>
 
-<section class="video-comparison-section">
-	<h2 class="title is-3" style="text-align: center;">♠️ Qualitative Comparison on Shape Reconstruction ♠️</h2>
-	<p>
-		We compare our results with OmniPart, PartCrafter, and URDFormer.
-		Our method fulfills accurate, high-fidelity articulated object shape reconstruction.
-	</p>
+  <section class="video-comparison-section shape-reconstruction">
+    <h2 class="title is-3" style="text-align: center;">♠️ Qualitative Comparison on Shape Reconstruction ♠️</h2>
+    <p>
+      We compare our results with
+      <a href="https://omnipart.github.io/" target="_blank" class="method-link">OmniPart</a>,
+      <a href="https://wgsxm.github.io/projects/partcrafter/" target="_blank" class="method-link">PartCrafter</a>, and
+      <a href="https://urdformer.github.io/" target="_blank" class="method-link">URDFormer</a>.
+      Our method fulfills accurate, high-fidelity articulated object shape reconstruction.
+    </p>
+
     <h3>Microwave</h3>
     <div class="video-container">
-        <div class="video-item">
-			<h4>Input Image</h4>
-			<img src="./static/mesh/7221_microwave/input_image.png" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Ground Truth</h4>
-            <img src="./static/mesh/7221_microwave/GT.gif" class="comparison-image" />
-        </div>
-        <div class="video-item emphasized">
-            <h4>Ours</h4>
-            <img src="./static/mesh/7221_microwave/SPARK.gif" class="comparison-image" />
-        </div>
-		<div class="video-item" >
-			<h4>OmniPart</h4>
-			<img src="./static/mesh/7221_microwave/OmniPart.gif" class="comparison-image" />
-		</div>
-        <div class="video-item">
-            <h4>PartCrafter</h4>
-            <img src="./static/mesh/7221_microwave/PartCrafter.gif" class="comparison-image" />
-        </div>
-		<div class="video-item ">
-            <h4>URDFormer</h4>
-            <img src="./static/mesh/7221_microwave/URDFormer.gif" class="comparison-image" />
-        </div>
+      <div class="video-item">
+        <h4>Input Image</h4>
+        <img src="./static/mesh/7221_microwave/input_image.png" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Ground Truth</h4>
+        <img src="./static/mesh/7221_microwave/GT.gif" class="comparison-image" />
+      </div>
+      <div class="video-item" >
+        <h4>OmniPart</h4>
+        <img src="./static/mesh/7221_microwave/OmniPart.gif" class="comparison-image" />
+      </div>
+      <div class="video-item">
+          <h4>PartCrafter</h4>
+          <img src="./static/mesh/7221_microwave/PartCrafter.gif" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+          <h4>URDFormer</h4>
+          <img src="./static/mesh/7221_microwave/URDFormer.gif" class="comparison-image" />
+      </div>
+      <div class="video-item emphasized">
+        <h4>Ours</h4>
+        <img src="./static/mesh/7221_microwave/SPARK.gif" class="comparison-image" />
+    </div>
     </div>
 
-	<h3>Refrigerator</h3>
+    <h3>Refrigerator</h3>
     <div class="video-container">
-        <div class="video-item">
-			<h4>Input Image</h4>
-			<img src="./static/mesh/10900_fridge/input_image.png" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Ground Truth</h4>
-            <img src="./static/mesh/10900_fridge/GT.gif" class="comparison-image" />
-        </div>
-        <div class="video-item emphasized">
-            <h4>Ours</h4>
-            <img src="./static/mesh/10900_fridge/SPARK.gif" class="comparison-image" />
-        </div>
-		<div class="video-item">
-			<h4>OmniPart</h4>
-			<img src="./static/mesh/10900_fridge/OmniPart.gif" class="comparison-image" />
-		</div>
-		<div class="video-item">
-            <h4>PartCrafter</h4>
-            <img src="./static/mesh/10900_fridge/PartCrafter.gif" class="comparison-image" />
-        </div>
-        <div class="video-item ">
-            <h4>URDFormer</h4>
-            <img src="./static/mesh/10900_fridge/URDFormer.gif" class="comparison-image" />
-        </div>
+      <div class="video-item">
+        <h4>Input Image</h4>
+        <img src="./static/mesh/10900_fridge/input_image.png" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Ground Truth</h4>
+        <img src="./static/mesh/10900_fridge/GT.gif" class="comparison-image" />
+      </div>
+      <div class="video-item">
+        <h4>OmniPart</h4>
+        <img src="./static/mesh/10900_fridge/OmniPart.gif" class="comparison-image" />
+      </div>
+      <div class="video-item">
+        <h4>PartCrafter</h4>
+        <img src="./static/mesh/10900_fridge/PartCrafter.gif" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>URDFormer</h4>
+        <img src="./static/mesh/10900_fridge/URDFormer.gif" class="comparison-image" />
+      </div>
+      <div class="video-item emphasized">
+        <h4>Ours</h4>
+        <img src="./static/mesh/10900_fridge/SPARK.gif" class="comparison-image" />
+      </div>
     </div>
 
-	<h3>Table</h3>
+    <h3>Table</h3>
     <div class="video-container">
-        <div class="video-item">
-			<h4>Input Image</h4>
-			<img src="./static/mesh/25913_desk/input_image.png" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Ground Truth</h4>
-            <img src="./static/mesh/25913_desk/GT2.gif" class="comparison-image" />
-        </div>
-        <div class="video-item emphasized">
-            <h4>Ours</h4>
-            <img src="./static/mesh/25913_desk/SPARK.gif" class="comparison-image" />
-        </div>
-		<div class="video-item">
-			<h4>OmniPart</h4>
-			<img src="./static/mesh/25913_desk/OmniPart.gif" class="comparison-image" />
-		</div>
-        <div class="video-item">
-            <h4>PartCrafter</h4>
-            <img src="./static/mesh/25913_desk/PartCrafter.gif" class="comparison-image" />
-        </div>
-		<div class="video-item ">
-            <h4>URDFormer</h4>
-            <img src="./static/mesh/25913_desk/URDFormer.gif" class="comparison-image" />
-        </div>
+      <div class="video-item">
+        <h4>Input Image</h4>
+        <img src="./static/mesh/25913_desk/input_image.png" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Ground Truth</h4>
+        <img src="./static/mesh/25913_desk/GT2.gif" class="comparison-image" />
+      </div> 
+      <div class="video-item">
+        <h4>OmniPart</h4>
+        <img src="./static/mesh/25913_desk/OmniPart.gif" class="comparison-image" />
+      </div>
+      <div class="video-item">
+        <h4>PartCrafter</h4>
+        <img src="./static/mesh/25913_desk/PartCrafter.gif" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>URDFormer</h4>
+        <img src="./static/mesh/25913_desk/URDFormer.gif" class="comparison-image" />
+      </div>
+      <div class="video-item emphasized">
+        <h4>Ours</h4>
+        <img src="./static/mesh/25913_desk/SPARK.gif" class="comparison-image" />
+      </div>
     </div>
 
-	<h3>Storage Furniture</h3>
+    <h3>Storage Furniture</h3>
     <div class="video-container">
-        <div class="video-item">
-			<h4>Input Image</h4>
-			<img src="./static/mesh/35059_drawer/input_image.png" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Ground Truth</h4>
-            <img src="./static/mesh/35059_drawer/GT.gif" class="comparison-image" />
-        </div>
-        <div class="video-item emphasized">
-            <h4>Ours</h4>
-            <img src="./static/mesh/35059_drawer/SPARK.gif" class="comparison-image" />
-        </div>
-		<div class="video-item">
-			<h4>OmniPart</h4>
-			<img src="./static/mesh/35059_drawer/OmniPart.gif" class="comparison-image" />
-		</div>
-        <div class="video-item">
-            <h4>PartCrafter</h4>
-            <img src="./static/mesh/35059_drawer/PartCrafter.gif" class="comparison-image" />
-        </div>
-		<div class="video-item ">
-            <h4>URDFormer</h4>
-            <img src="./static/mesh/35059_drawer/URDFormer.gif" class="comparison-image" />
-        </div>
+      <div class="video-item">
+        <h4>Input Image</h4>
+        <img src="./static/mesh/35059_drawer/input_image.png" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Ground Truth</h4>
+        <img src="./static/mesh/35059_drawer/GT.gif" class="comparison-image" />
+      </div>
+      <div class="video-item">
+        <h4>OmniPart</h4>
+        <img src="./static/mesh/35059_drawer/OmniPart.gif" class="comparison-image" />
+      </div>
+      <div class="video-item">
+        <h4>PartCrafter</h4>
+        <img src="./static/mesh/35059_drawer/PartCrafter.gif" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>URDFormer</h4>
+        <img src="./static/mesh/35059_drawer/URDFormer.gif" class="comparison-image" />
+      </div>
+      <div class="video-item emphasized">
+        <h4>Ours</h4>
+        <img src="./static/mesh/35059_drawer/SPARK.gif" class="comparison-image" />
+      </div>
     </div>
 
-	<h3>Safe</h3>
+    <h3>Safe</h3>
     <div class="video-container">
-        <div class="video-item">
-			<h4>Input Image</h4>
-			<img src="./static/mesh/102301_safe/input_image.png" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Ground Truth</h4>
-            <img src="./static/mesh/102301_safe/GT.gif" class="comparison-image" />
-        </div>
-        <div class="video-item emphasized">
-            <h4>Ours</h4>
-            <img src="./static/mesh/102301_safe/SPARK.gif" class="comparison-image" />
-        </div>
-		<div class="video-item">
-			<h4>OmniPart</h4>
-			<img src="./static/mesh/102301_safe/OmniPart.gif" class="comparison-image" />
-		</div>
-        <div class="video-item">
-            <h4>PartCrafter</h4>
-            <img src="./static/mesh/102301_safe/PartCrafter.gif" class="comparison-image" />
-        </div>
-		<div class="video-item ">
-            <h4>URDFormer</h4>
-            <img src="./static/mesh/102301_safe/URDFormer.gif" class="comparison-image" />
-        </div>
+      <div class="video-item">
+        <h4>Input Image</h4>
+        <img src="./static/mesh/102301_safe/input_image.png" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Ground Truth</h4>
+        <img src="./static/mesh/102301_safe/GT.gif" class="comparison-image" />
+      </div>
+      <div class="video-item">
+        <h4>OmniPart</h4>
+        <img src="./static/mesh/102301_safe/OmniPart.gif" class="comparison-image" />
+      </div>
+      <div class="video-item">
+        <h4>PartCrafter</h4>
+        <img src="./static/mesh/102301_safe/PartCrafter.gif" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>URDFormer</h4>
+        <img src="./static/mesh/102301_safe/URDFormer.gif" class="comparison-image" />
+      </div>
+      <div class="video-item emphasized">
+        <h4>Ours</h4>
+        <img src="./static/mesh/102301_safe/SPARK.gif" class="comparison-image" />
+      </div>
     </div>
 
-	<h3>Washing Machine</h3>
+    <h3>Washing Machine</h3>
     <div class="video-container">
-        <div class="video-item">
-			<h4>Input Image</h4>
-			<img src="./static/mesh/103521_washer/input_image.png" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Ground Truth</h4>
-            <img src="./static/mesh/103521_washer/GT.gif" class="comparison-image" />
-        </div>
-        <div class="video-item emphasized">
-            <h4>Ours</h4>
-            <img src="./static/mesh/103521_washer/SPARK.gif" class="comparison-image" />
-        </div>
-		<div class="video-item">
-			<h4>OmniPart</h4>
-			<img src="./static/mesh/103521_washer/OmniPart.gif" class="comparison-image" />
-		</div>
-        <div class="video-item">
-            <h4>PartCrafter</h4>
-            <img src="./static/mesh/103521_washer/PartCrafter.gif" class="comparison-image" />
-        </div>
-		<div class="video-item ">
-            <h4>URDFormer</h4>
-            <img src="./static/mesh/103521_washer/URDFormer.gif" class="comparison-image" />
-        </div>
+      <div class="video-item">
+        <h4>Input Image</h4>
+        <img src="./static/mesh/103521_washer/input_image.png" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Ground Truth</h4>
+        <img src="./static/mesh/103521_washer/GT.gif" class="comparison-image" />
+      </div>
+      <div class="video-item">
+        <h4>OmniPart</h4>
+        <img src="./static/mesh/103521_washer/OmniPart.gif" class="comparison-image" />
+      </div>
+      <div class="video-item">
+        <h4>PartCrafter</h4>
+        <img src="./static/mesh/103521_washer/PartCrafter.gif" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>URDFormer</h4>
+        <img src="./static/mesh/103521_washer/URDFormer.gif" class="comparison-image" />
+      </div>
+      <div class="video-item emphasized">
+        <h4>Ours</h4>
+        <img src="./static/mesh/103521_washer/SPARK.gif" class="comparison-image" />
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="video-comparison-section">
-	<h2 class="title is-3" style="text-align: center;">♣️ Qualitative Comparison on URDF Estimation ♣️</h2>
-	<p>
-		We compare our results with Articulate-Anything, Articulate-AnyMesh.
-		The closed-state results are reconstructed or retrieved meshes, while the open-state configurations are obtained through kinematic transformations using the estimated URDF parameters.
-		Our method achieves more accurate and physically consistent URDF estimation, leading to realistic articulation behavior.
-	</p>
+  <section class="video-comparison-section urdf-estimation">
+    <h2 class="title is-3" style="text-align: center;">♣️ Qualitative Comparison on URDF Estimation ♣️</h2>
+    <p>
+      We compare our results with Articulate-Anything, Articulate-AnyMesh.
+      The closed-state results are reconstructed or retrieved meshes, while the open-state configurations are obtained through kinematic transformations using the estimated URDF parameters.
+      Our method achieves more accurate and physically consistent URDF estimation, leading to realistic articulation behavior.
+    </p>
+
     <h3>Microwave</h3>
     <div class="video-container">
-        <div class="video-item">
-			<h4>Input Image</h4>
-			<img src="./static/URDF/7236_microwave/input_image.png" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Ground Truth</h4>
-            <img src="./static/URDF/7236_microwave/GT.gif" class="comparison-image" />
-        </div>
-        <div class="video-item emphasized">
-            <h4>Ours</h4>
-            <img src="./static/URDF/7236_microwave/SPARK_blender.gif" class="comparison-image" />
-        </div>
-		<div class="video-item" >
-			<h4>Articulate-Anything</h4>
-			<img src="./static/URDF/7236_microwave/Anything.gif" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Articulate AnyMesh</h4>
-            <img src="./static/URDF/7236_microwave/AnyMesh.gif" class="comparison-image" />
-        </div>
+      <div class="video-item">
+        <h4>Input Image</h4>
+        <img src="./static/URDF/7236_microwave/input_image.png" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Ground Truth</h4>
+        <img src="./static/URDF/7236_microwave/GT.gif" class="comparison-image" />
+      </div>
+      <div class="video-item" >
+        <h4>Articulate-Anything</h4>
+        <img src="./static/URDF/7236_microwave/Anything.gif" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Articulate AnyMesh</h4>
+        <img src="./static/URDF/7236_microwave/AnyMesh.gif" class="comparison-image" />
+      </div>
+      <div class="video-item emphasized">
+        <h4>Ours</h4>
+        <img src="./static/URDF/7236_microwave/SPARK_blender.gif" class="comparison-image" />
+      </div>
     </div>
-	<h3>Refrigerator</h3>
-	<div class="video-container">
-        <div class="video-item">
-			<h4>Input Image</h4>
-			<img src="./static/URDF/10627_refrigerator/input_image.png" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Ground Truth</h4>
-            <img src="./static/URDF/10627_refrigerator/GT.gif" class="comparison-image" />
-        </div>
-        <div class="video-item emphasized">
-            <h4>Ours</h4>
-            <img src="./static/URDF/10627_refrigerator/SPARK_blender.gif" class="comparison-image" />
-        </div>
-		<div class="video-item" >
-			<h4>Articulate-Anything</h4>
-			<img src="./static/URDF/10627_refrigerator/Anything.gif" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Articulate AnyMesh</h4>
-            <img src="./static/URDF/10627_refrigerator/AnyMesh.gif" class="comparison-image" />
-        </div>
+
+    <h3>Refrigerator</h3>
+    <div class="video-container">
+      <div class="video-item">
+        <h4>Input Image</h4>
+        <img src="./static/URDF/10627_refrigerator/input_image.png" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Ground Truth</h4>
+        <img src="./static/URDF/10627_refrigerator/GT.gif" class="comparison-image" />
+      </div>
+      <div class="video-item" >
+        <h4>Articulate-Anything</h4>
+        <img src="./static/URDF/10627_refrigerator/Anything.gif" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Articulate AnyMesh</h4>
+        <img src="./static/URDF/10627_refrigerator/AnyMesh.gif" class="comparison-image" />
+      </div>
+      <div class="video-item emphasized">
+        <h4>Ours</h4>
+        <img src="./static/URDF/10627_refrigerator/SPARK_blender.gif" class="comparison-image" />
+      </div>
     </div>
-	<h3>Table</h3>
-	<div class="video-container">
-        <div class="video-item">
-			<h4>Input Image</h4>
-			<img src="./static/URDF/20411_table/input_image.png" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Ground Truth</h4>
-            <img src="./static/URDF/20411_table/GT.gif" class="comparison-image" />
-        </div>
-        <div class="video-item emphasized">
-            <h4>Ours</h4>
-            <img src="./static/URDF/20411_table/SPARK_blender.gif" class="comparison-image" />
-        </div>
-		<div class="video-item" >
-			<h4>Articulate-Anything</h4>
-			<img src="./static/URDF/20411_table/Anything.gif" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Articulate AnyMesh</h4>
-            <img src="./static/URDF/20411_table/AnyMesh.gif" class="comparison-image" />
-        </div>
+  
+    <h3>Table</h3>
+    <div class="video-container">
+      <div class="video-item">
+        <h4>Input Image</h4>
+        <img src="./static/URDF/20411_table/input_image.png" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Ground Truth</h4>
+        <img src="./static/URDF/20411_table/GT.gif" class="comparison-image" />
+      </div>
+      <div class="video-item" >
+        <h4>Articulate-Anything</h4>
+        <img src="./static/URDF/20411_table/Anything.gif" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Articulate AnyMesh</h4>
+        <img src="./static/URDF/20411_table/AnyMesh.gif" class="comparison-image" />
+      </div>
+      <div class="video-item emphasized">
+        <h4>Ours</h4>
+        <img src="./static/URDF/20411_table/SPARK_blender.gif" class="comparison-image" />
+      </div>
     </div>
-	<h3>Storage Furniture</h3>
-	<div class="video-container">
-        <div class="video-item">
-			<h4>Input Image</h4>
-			<img src="./static/URDF/44817_storagefurniture/input_image.png" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Ground Truth</h4>
-            <img src="./static/URDF/44817_storagefurniture/GT.gif" class="comparison-image" />
-        </div>
-        <div class="video-item emphasized">
-            <h4>Ours</h4>
-            <img src="./static/URDF/44817_storagefurniture/SPARK_blender.gif" class="comparison-image" />
-        </div>
-		<div class="video-item" >
-			<h4>Articulate-Anything</h4>
-			<img src="./static/URDF/44817_storagefurniture/Anything.gif" class="comparison-image" />
-		</div>
-        <div class="video-item ">
-            <h4>Articulate AnyMesh</h4>
-            <img src="./static/URDF/44817_storagefurniture/AnyMesh.gif" class="comparison-image" />
-        </div>
+
+    <h3>Storage Furniture</h3>
+    <div class="video-container">
+      <div class="video-item">
+        <h4>Input Image</h4>
+        <img src="./static/URDF/44817_storagefurniture/input_image.png" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Ground Truth</h4>
+        <img src="./static/URDF/44817_storagefurniture/GT.gif" class="comparison-image" />
+      </div>
+      <div class="video-item" >
+        <h4>Articulate-Anything</h4>
+        <img src="./static/URDF/44817_storagefurniture/Anything.gif" class="comparison-image" />
+      </div>
+      <div class="video-item ">
+        <h4>Articulate AnyMesh</h4>
+        <img src="./static/URDF/44817_storagefurniture/AnyMesh.gif" class="comparison-image" />
+      </div>
+      <div class="video-item emphasized">
+        <h4>Ours</h4>
+        <img src="./static/URDF/44817_storagefurniture/SPARK_blender.gif" class="comparison-image" />
+      </div>
     </div>
-</section>
+  </section>
 
 <style>
   /* Teaser image responsive styling */
@@ -591,20 +606,66 @@
       line-height: 1.6;
   }
   .video-comparison-section h3 {
-      text-align: left;
+      text-align: center;
       margin-top: 40px;
       margin-bottom: 20px;
-      font-size: 1.5em;
+      font-size: 1.2em;
       font-weight: bold;
       color: #333;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
+      background-color: #f5f5f5;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-family: 'Noto Sans', sans-serif;
+      letter-spacing: 0.5px;
   }
-  .video-container {
+  .video-comparison-section .video-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
       justify-items: center;
+  }
+
+  /* Shape Reconstruction section - 6 columns */
+  .shape-reconstruction .video-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  /* URDF Estimation section - 5 columns */
+  .urdf-estimation .video-container {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  /* Desktop: force 6 or 5 columns */
+  @media (min-width: 1024px) {
+      .shape-reconstruction .video-container {
+          grid-template-columns: repeat(6, 1fr);
+      }
+      .urdf-estimation .video-container {
+          grid-template-columns: repeat(5, 1fr);
+      }
+  }
+
+  /* Tablet: 3 columns */
+  @media (max-width: 1023px) and (min-width: 768px) {
+      .shape-reconstruction .video-container,
+      .urdf-estimation .video-container {
+          grid-template-columns: repeat(3, 1fr);
+      }
+  }
+
+  /* Mobile: 2 columns */
+  @media (max-width: 767px) and (min-width: 480px) {
+      .shape-reconstruction .video-container,
+      .urdf-estimation .video-container {
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+  /* Small mobile: 1 column */
+  @media (max-width: 479px) {
+      .shape-reconstruction .video-container,
+      .urdf-estimation .video-container {
+          grid-template-columns: 1fr;
+      }
   }
   .video-item {
       text-align: center;
@@ -622,8 +683,10 @@
   }
   .video-item h4 {
       margin-bottom: 10px;
-      font-size: 1.2em;
+      font-size: 1em;
       color: #555;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
   }
   .video-item video {
       width: 100%;
@@ -640,17 +703,26 @@
   /* Emphasized style for "Ours" */
   .video-item.emphasized {
       border: 3px solid #8b8cc0;
-      background-color: #b6a9cf;
+      background-color: #fff;
       box-shadow: 0 4px 10px #b6a9cf;
-      transform: scale(1.05);
   }
   .video-item.emphasized h4 {
-      color: #4e659d; /* Dark orange font */
+      color: #8b8cc0;
       font-weight: bold;
       font-size: 1.3em;
   }
   .video-item.emphasized video {
-      border: 2px solid #8b8cc0; /* Golden border around video */
+      border: 2px solid #8b8cc0;
+  }
+
+  /* Method link styling */
+  .method-link {
+    color: #3373dc;
+    text-decoration: none;
+  }
+  .method-link:hover {
+    color: #3373dc;
+    text-decoration: underline;
   }
 </style>
 
@@ -689,25 +761,6 @@ url={https://arxiv.org/abs/2512.01629}
     </div>
   </div>
 </section>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-
-    <!-- Copyright -->
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p style="text-align: center">
-            Website template is borrowed from <a href="https://nerfies.github.io">Nerfies</a>.
-            Thanks for their effort.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</footer>
 
 </body>
 </html>
