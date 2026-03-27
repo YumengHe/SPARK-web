@@ -239,7 +239,7 @@
   </section>
 
   <section class="video-comparison-section shape-reconstruction">
-    <h2 class="title is-3" style="text-align: center;">♠️ Qualitative Comparison on Shape Reconstruction ♠️</h2>
+    <h2 class="title is-3" style="text-align: center;">🧸 Qualitative Comparison on Shape Reconstruction 🧸</h2>
     <p>
       We compare our results with
       <a href="https://omnipart.github.io/" target="_blank" class="method-link">OmniPart</a>,
@@ -418,7 +418,7 @@
   </section>
 
   <section class="video-comparison-section urdf-estimation">
-    <h2 class="title is-3" style="text-align: center;">♣️ Qualitative Comparison on URDF Estimation ♣️</h2>
+    <h2 class="title is-3" style="text-align: center;">🧩 Qualitative Comparison on URDF Estimation 🧩</h2>
     <p>
       We compare our results with
       <a href="https://articulate-anything.github.io/" target="_blank" class="method-link">Articulate-Anything</a>,
@@ -521,6 +521,17 @@
         <h4>Ours</h4>
         <img src="./static/URDF/44817_storagefurniture/SPARK_blender.gif" class="comparison-image" />
       </div>
+    </div>
+  </section>
+
+  <section class="video-comparison-section applications">
+    <h2 class="title is-3" style="text-align: center;">🤖 Applications 🤖</h2>
+    <p>
+      Our method generates high-quality articulated objects with URDF parameters, enabling robot learning tasks such as door opening and drawer pulling.
+    </p>
+    <div class="application-videos">
+      <video class="application-video" src="./static/robotics/demo_1.mov" autoplay muted loop playsinline></video>
+      <video class="application-video" src="./static/robotics/demo_2.mov" autoplay muted loop playsinline></video>
     </div>
   </section>
 
@@ -725,6 +736,31 @@
   .method-link:hover {
     color: #3373dc;
     text-decoration: underline;
+  }
+
+  /* Application videos styling */
+  .application-videos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  .application-video {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+    object-fit: cover;
+  }
+
+  /* Mobile: stack videos vertically */
+  @media (max-width: 768px) {
+    .application-video {
+      width: 90%;
+    }
   }
 </style>
 
