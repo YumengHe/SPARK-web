@@ -31,8 +31,7 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open [localhost:8000](http://127.0.0.1:8000/). No build step is needed.
 
-<details>
-<summary><strong>Citation</strong></summary>
+## Citation
 
 ```bibtex
 @misc{he2025spark,
@@ -43,7 +42,5 @@ Open [localhost:8000](http://127.0.0.1:8000/). No build step is needed.
   url={https://arxiv.org/abs/2512.01629}
 }
 ```
-
-</details>
 
 [MIT License](LICENSE)
