@@ -8,7 +8,7 @@
 
 <p>
   <a href="https://heyumeng.com/SPARK-web/"><strong>Website</strong></a> &nbsp;·&nbsp;
-  <a href="https://arxiv.org/abs/2512.01629"><strong>Paper</strong></a> &nbsp;·&nbsp;
+  <a href="https://arxiv.org/abs/2512.01629"><strong>arXiv</strong></a> &nbsp;·&nbsp;
   <a href="https://github.com/YumengHe/SPARK"><strong>Code</strong></a> &nbsp;·&nbsp;
   <a href="https://huggingface.co/2bidoubi/SPARK"><strong>Model</strong></a>
 </p>
