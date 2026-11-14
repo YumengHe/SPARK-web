@@ -26,16 +26,6 @@
 
 Source for the [SPARK project website](https://heyumeng.com/SPARK-web/); for reconstruction code and setup, see the [implementation repository](https://github.com/YumengHe/SPARK).
 
-## 🖥️ Local preview
-
-From this repository, run:
-
-```bash
-python3 -m http.server 8000 --bind 127.0.0.1
-```
-
-Open [localhost:8000](http://127.0.0.1:8000/). No build step is needed.
-
 ## 📝 Citation
 
 If you find SPARK useful for your research, please cite:
@@ -49,5 +39,3 @@ If you find SPARK useful for your research, please cite:
   year={2026}
 }
 ```
-
-[MIT License](LICENSE)
