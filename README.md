@@ -34,12 +34,12 @@ Open [localhost:8000](http://127.0.0.1:8000/). No build step is needed.
 ## Citation
 
 ```bibtex
-@misc{he2025spark,
-  title={SPARK: Sim-ready Part-level Articulated Reconstruction with VLM Knowledge},
-  author={Yumeng He and Ying Jiang and Jiayin Lu and Yin Yang and Chenfanfu Jiang},
-  year={2025},
-  eprint={2512.01629},
-  url={https://arxiv.org/abs/2512.01629}
+@inproceedings{he2026spark,
+  title={Spark: Sim-ready part-level articulated reconstruction with vlm knowledge},
+  author={He, Yumeng and Jiang, Ying and Lu, Jiayin and Yang, Yin and Jiang, Chenfanfu},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={7233--7243},
+  year={2026}
 }
 ```
 
